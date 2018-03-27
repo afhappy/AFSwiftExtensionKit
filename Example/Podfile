@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AFSwiftExtensionKit_Example' do
+  pod 'AFSwiftExtensionKit', :path => '../'
+
+  target 'AFSwiftExtensionKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
