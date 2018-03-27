@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  AFSwiftExtensionKit
 //
-//  Created by anandevelope on 03/27/2018.
-//  Copyright (c) 2018 anandevelope. All rights reserved.
+//  Created by afhappy on 03/27/2018.
+//  Copyright (c) 2018 afhappy. All rights reserved.
 //
 
 import UIKit

@@ -1,0 +1,22 @@
+{
+  "name": "AFSwiftExtensionKit",
+  "version": "0.1.0",
+  "summary": "A short description of AFSwiftExtensionKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/afhappy/AFSwiftExtensionKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "afhappy": "xiao0423fei@163.com"
+  },
+  "source": {
+    "git": "https://github.com/afhappy/AFSwiftExtensionKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AFSwiftExtensionKit/Classes/**/*"
+}

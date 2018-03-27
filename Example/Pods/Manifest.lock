@@ -1,0 +1,16 @@
+PODS:
+  - AFSwiftExtensionKit (0.1.0)
+
+DEPENDENCIES:
+  - AFSwiftExtensionKit (from `../`)
+
+EXTERNAL SOURCES:
+  AFSwiftExtensionKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AFSwiftExtensionKit: ab1fb998f452de3b8d3f7a5422df745e5183a864
+
+PODFILE CHECKSUM: 1ad4089178ccf94029d3861ee4e1fd60ccd99188
+
+COCOAPODS: 1.1.1
