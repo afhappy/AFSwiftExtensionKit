@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 extension UIBarButtonItem{
-    class func customBarButtonItem(target: Any, action: Selector, image: UIImage, highImage: UIImage) -> (UIBarButtonItem){
+    public class func customBarButtonItem(target: Any, action: Selector, image: UIImage, highImage: UIImage) -> (UIBarButtonItem){
         let button = UIButton(type: .custom)
         button.frame.size = CGSize(width: 44, height: 44)
         button.addTarget(target, action: action, for: .touchUpInside)

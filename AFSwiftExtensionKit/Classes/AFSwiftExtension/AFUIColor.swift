@@ -11,10 +11,10 @@ import UIKit
 
 // MARK: - 创建构造函数
 extension UIColor{
-    convenience init(r: CGFloat, g: CGFloat, b: CGFloat) {
+    public convenience init(r: CGFloat, g: CGFloat, b: CGFloat) {
         self.init(red: r / 255.0, green: g / 255.0, blue: b / 255.0, alpha: 1.0)
     }
-    convenience init(r: CGFloat, g: CGFloat, b: CGFloat, a: CGFloat) {
+    public convenience init(r: CGFloat, g: CGFloat, b: CGFloat, a: CGFloat) {
         self.init(red: r / 255.0, green: g / 255.0, blue: b / 255.0, alpha: a)
     }
     // MARK: - Hex（十六进制转RGB）- 方法1
@@ -67,7 +67,7 @@ extension UIColor{
     }
     
     // MARK: - Hex（十六进制转RGB）- 方法2
-    convenience init( hexValue: Int64, a: CGFloat ) {
+    public convenience init( hexValue: Int64, a: CGFloat ) {
         let r = ((CGFloat)((hexValue & 0xFF0000) >> 16))/255.0;
         let g = ((CGFloat)((hexValue & 0xFF00) >> 8))/255.0;
         let b = ((CGFloat)(hexValue & 0xFF))/255.0;
@@ -75,7 +75,7 @@ extension UIColor{
         self.init(red: r, green: g, blue: b, alpha: a)
     }
     
-    convenience init( hexValue: Int64 ) {
+    public convenience init( hexValue: Int64 ) {
         self.init(hexValue: hexValue, a: 1.0)
     }
     

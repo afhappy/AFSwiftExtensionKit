@@ -11,7 +11,7 @@ import UIKit
 
 extension UIImage{
     // MARK: - 图片适配
-    class func reScaleImage(image: UIImage, size: CGSize) -> (UIImage){
+    public class func reScaleImage(image: UIImage, size: CGSize) -> (UIImage){
         var tempImage: UIImage? = nil
         let tempSize = image.size
         let tempWidth = tempSize.width
@@ -43,7 +43,7 @@ extension UIImage{
         return tempImage ?? image
         
     }
-    class func reScaleImageToSize(image: UIImage, size: CGSize) ->(UIImage){
+    public class func reScaleImageToSize(image: UIImage, size: CGSize) ->(UIImage){
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
         image.draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
         let tempImage = UIGraphicsGetImageFromCurrentImageContext()!

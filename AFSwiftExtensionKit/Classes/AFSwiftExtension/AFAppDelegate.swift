@@ -11,30 +11,44 @@ import Foundation
 /**
  * 导航栏样式
  **/
-struct AFNavStyle {
+public struct AFNavStyle {
 //    导航栏颜色
-    var foregroundColor: UIColor?
+    public var foregroundColor: UIColor?
 //    导航栏字体
-    var font: UIFont?
+    public var font: UIFont?
 //
-    var tintColor: UIColor?
+    public var tintColor: UIColor?
+    
+    public init(foregroundColor: UIColor?, font: UIFont?, tintColor: UIColor?){
+        self.foregroundColor = foregroundColor
+        self.font = font
+        self.tintColor = tintColor
+    }
 }
 /**
  * tabbar样式
  **/
-struct AFTabbarStyle {
+public struct AFTabbarStyle {
 //    tabbar正常模式字体大小
-    var normalFont: UIFont?
+    public var normalFont: UIFont?
 //    tabbar正常模式颜色
-    var normalForegroundColor: UIColor?
+    public var normalForegroundColor: UIColor?
 //    tabbar选中模式字体大小
-    var selectFont: UIFont?
+    public var selectFont: UIFont?
 //    tabbar选中模式颜色
-    var selectForegroundColor: UIColor?
+    public var selectForegroundColor: UIColor?
+    
+    
+    public init(normalFont: UIFont?, normalForegroundColor: UIColor?, selectFont: UIFont?, selectForegroundColor: UIColor?){
+        self.normalFont = normalFont
+        self.normalForegroundColor = normalForegroundColor
+        self.selectFont = selectFont
+        self.selectForegroundColor = selectForegroundColor
+    }
 }
-class AFAppDelegate: NSObject {
+public class AFAppDelegate: NSObject {
     // MARK: - 单例
-    static let singleton: AFAppDelegate = AFAppDelegate()
+    public static let singleton: AFAppDelegate = AFAppDelegate()
     private override init() {
         
     }
