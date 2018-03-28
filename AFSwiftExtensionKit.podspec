@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AFSwiftExtensionKit'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = '自封装类扩展'
 
 # This description is used to generate tags and improve search results.
@@ -37,9 +37,10 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'AFSwiftExtensionKit/Classes/**/*'
   
-  # s.resource_bundles = {
+  s.resource_bundles = {
   #   'AFSwiftExtensionKit' => ['AFSwiftExtensionKit/Assets/*.png']
-  # }
+      'AFSwiftExtensionKit' => ['AFSwiftExtensionKit/Assets/AFSwiftExtensionKitLocalizable.strings']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

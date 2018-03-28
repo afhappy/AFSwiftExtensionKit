@@ -14,11 +14,9 @@
 "AFDateFormatter.text4" = "%.f天前";
 "AFDateFormatter.text5" = "M月d日";
 "AFDateFormatter.text6" = "%.f年前";
-"AFDateFormatter.text7" = "昨天 %@";
-"AFDateFormatter.text8" = "昨天HH:mm";
-"AFDateFormatter.text9" = "凌晨hh:mm";
-"AFDateFormatter.text10" = "上午hh:mm";
-"AFDateFormatter.text11" = "下午hh:mm";
-"AFDateFormatter.text12" = "晚上hh:mm";
-"AFDateFormatter.text13" = "昨天HH:mm";
-"AFDateFormatter.text14" = "今天 %@";
+"AFDateFormatter.text7" = "昨天HH:mm";
+"AFDateFormatter.text8" = "凌晨hh:mm";
+"AFDateFormatter.text9" = "上午hh:mm";
+"AFDateFormatter.text10" = "下午hh:mm";
+"AFDateFormatter.text11" = "晚上hh:mm";
+"AFDateFormatter.text12" = "昨天HH:mm";

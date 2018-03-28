@@ -17,7 +17,7 @@ extension Date{
      * timeInterval   时间戳
      * return String
  **/
-    static func stringWithFormatterStyle(formatterStyle: String, timeInterval: TimeInterval) -> String{
+    public static func stringWithFormatterStyle(formatterStyle: String, timeInterval: TimeInterval) -> String{
         let dateFormatter = DateFormatter.init()
         dateFormatter.dateFormat = formatterStyle
         let formatDate = NSNumber.init(value: timeInterval)
@@ -30,25 +30,32 @@ extension Date{
      * timeInterval 时间戳
      * return String
  **/
-    static func intervalTimeFromCurrentDate(timeInterval: TimeInterval) -> String{
+    public static func intervalTimeFromCurrentDate(timeInterval: TimeInterval) -> String{
         let date = Date.init()
         let intervalTime = date.timeIntervalSince1970
         let sepTime = (intervalTime*1000 - timeInterval)/1000
         if (sepTime < 60) {//一分钟内
-            return NSLocalizedString("AFDateFormatter.text1", comment: "")
+            return transformLocalizedString(key: "AFDateFormatter.text1", value: 0)
         } else if (sepTime < 3600) {//一小时内
-            return String.init(format: NSLocalizedString("AFDateFormatter.text2", comment: ""), sepTime / 60)
+            return transformLocalizedString(key: "AFDateFormatter.text2", value: sepTime / 60)
         } else if (sepTime < 86400) {//一天内
-            return String.init(format: NSLocalizedString("AFDateFormatter.text3", comment: ""), sepTime / 3600)
+            return transformLocalizedString(key: "AFDateFormatter.text3", value: sepTime / 3600)
         } else if (sepTime < 2592000) {//30天内
-            return String.init(format: NSLocalizedString("AFDateFormatter.text4", comment: ""), sepTime / 86400)
+            return transformLocalizedString(key: "AFDateFormatter.text4", value: sepTime / 86400)
         } else if (sepTime < 31536000) {//30天至1年内
             let dateFormatter = DateFormatter.init()
-            dateFormatter.dateFormat = NSLocalizedString("AFDateFormatter.text5", comment: "")
-            dateFormatter.string(from: Date())
+            dateFormatter.dateFormat = transformLocalizedString(key: "AFDateFormatter.text5", value: 0)
+            return dateFormatter.string(from: Date())
         } else {
-            return String.init(format: NSLocalizedString("AFDateFormatter.text6", comment: ""), sepTime / 31536000)
+            return transformLocalizedString(key: "AFDateFormatter.text6", value: sepTime / 31536000)
         }
-        return ""
+    }
+    static func transformLocalizedString(key: String, value: Double) -> String{
+        let path = Bundle(for: AFAppDelegate.self)
+        if value == 0 {
+            return NSLocalizedString(key, tableName: "AFSwiftExtensionKitLocalizable", bundle: path, value: "", comment: "")
+        }else{
+            return String.init(format: NSLocalizedString(key, tableName: "AFSwiftExtensionKitLocalizable", bundle: path, value: "", comment: ""), value)
+        }
     }
 }
