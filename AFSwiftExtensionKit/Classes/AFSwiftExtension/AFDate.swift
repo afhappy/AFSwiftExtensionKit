@@ -51,11 +51,11 @@ extension Date{
         }
     }
     static func transformLocalizedString(key: String, value: Double) -> String{
-        let path = Bundle(for: AFAppDelegate.self)
+        let path = Bundle(url: Bundle(for: AFAppDelegate.self).url(forResource: "AFSwiftExtensionKit", withExtension: "bundle")!)
         if value == 0 {
-            return NSLocalizedString(key, tableName: "AFSwiftExtensionKitLocalizable", bundle: path, value: "", comment: "")
+            return NSLocalizedString(key, tableName: "AFSwiftExtensionKitLocalizable", bundle: path!, value: "", comment: "")
         }else{
-            return String.init(format: NSLocalizedString(key, tableName: "AFSwiftExtensionKitLocalizable", bundle: path, value: "", comment: ""), value)
+            return String.init(format: NSLocalizedString(key, tableName: "AFSwiftExtensionKitLocalizable", bundle: path!, value: "", comment: ""), value)
         }
     }
 }
