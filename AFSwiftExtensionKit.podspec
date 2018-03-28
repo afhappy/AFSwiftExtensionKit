@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AFSwiftExtensionKit'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of AFSwiftExtensionKit.'
+  s.version          = '0.1.2'
+  s.summary          = '扩展类'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -19,13 +19,17 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
+添加修改Navigation字体、背景色，tabbar字体、背景色;
+添加自定义navigationbar返回键;
+对UIColor进行构造函数的扩充;
+添加image给定size自适应大小;
                        DESC
 
-  s.homepage         = 'https://github.com/anandevelope/AFSwiftExtensionKit'
+  s.homepage         = 'https://github.com/afhappy/AFSwiftExtensionKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'anandevelope' => 'xiao0423fei@163.com' }
-  s.source           = { :git => 'https://github.com/anandevelope/AFSwiftExtensionKit.git', :tag => s.version.to_s }
+  s.author           = { 'afhappy' => 'xiao0423fei@163.com' }
+  s.source           = { :git => 'https://github.com/afhappy/AFSwiftExtensionKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
