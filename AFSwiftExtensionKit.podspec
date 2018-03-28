@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AFSwiftExtensionKit'
-  s.version          = '0.1.2'
-  s.summary          = 'A short description of AFSwiftExtensionKit.'
+  s.version          = '0.1.3'
+  s.summary          = '自封装类扩展'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -19,6 +19,11 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
+添加修改Navigation字体、背景色，tabbar字体、背景色;
+添加自定义navigationbar返回键;
+对UIColor进行构造函数的扩充;
+添加image给定size自适应大小;
+添加date格式化;
                        DESC
 
   s.homepage         = 'https://github.com/afhappy/AFSwiftExtensionKit'

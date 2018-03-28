@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  MyStudySwift
+
+  Created by fa on 2018/3/26.
+  Copyright © 2018年 mine. All rights reserved.
+*/
+/**
+ * Date扩展
+ **/
+"AFDateFormatter.text1" = "1分钟内";
+"AFDateFormatter.text2" = "%.f分钟前";
+"AFDateFormatter.text3" = "%.f小时前";
+"AFDateFormatter.text4" = "%.f天前";
+"AFDateFormatter.text5" = "M月d日";
+"AFDateFormatter.text6" = "%.f年前";
+"AFDateFormatter.text7" = "昨天 %@";
+"AFDateFormatter.text8" = "昨天HH:mm";
+"AFDateFormatter.text9" = "凌晨hh:mm";
+"AFDateFormatter.text10" = "上午hh:mm";
+"AFDateFormatter.text11" = "下午hh:mm";
+"AFDateFormatter.text12" = "晚上hh:mm";
+"AFDateFormatter.text13" = "昨天HH:mm";
+"AFDateFormatter.text14" = "今天 %@";

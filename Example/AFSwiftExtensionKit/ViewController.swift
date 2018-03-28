@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         self.title = "首页"
         colorExample()
         imageExample()
+        dateFormatExample(timeInterval: 1521792251000)
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,6 +44,16 @@ extension ViewController{
         imageView.image = UIImage.reScaleImage(image: image!, size: imageView.bounds.size)
         imageView.contentMode = UIViewContentMode.scaleAspectFit
         view.addSubview(imageView)
+    }
+    // MARK: - 时间格式化
+    func dateFormatExample(timeInterval: CGFloat) {
+        //            时间戳转字符串
+        let dateString = Date.stringWithFormatterStyle(formatterStyle: "yyyy-MM-dd HH:mm:ss", timeInterval: timeInterval)
+        print(dateString)
+        
+        //            根据时间戳计算时间间隔
+        let sepTime = Date.intervalTimeFromCurrentDate(timeInterval: timeInterval)
+        print(sepTime)
     }
 }
 
