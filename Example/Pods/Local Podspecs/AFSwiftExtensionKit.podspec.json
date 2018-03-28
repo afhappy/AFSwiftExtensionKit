@@ -1,8 +1,8 @@
 {
   "name": "AFSwiftExtensionKit",
-  "version": "0.1.2",
-  "summary": "A short description of AFSwiftExtensionKit.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.1.3",
+  "summary": "自封装类扩展",
+  "description": "TODO: Add long description of the pod here.\n添加修改Navigation字体、背景色，tabbar字体、背景色;\n添加自定义navigationbar返回键;\n对UIColor进行构造函数的扩充;\n添加image给定size自适应大小;\n添加date格式化;",
   "homepage": "https://github.com/afhappy/AFSwiftExtensionKit",
   "license": {
     "type": "MIT",
@@ -13,10 +13,15 @@
   },
   "source": {
     "git": "https://github.com/afhappy/AFSwiftExtensionKit.git",
-    "tag": "0.1.2"
+    "tag": "0.1.3"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "AFSwiftExtensionKit/Classes/**/*"
+  "source_files": "AFSwiftExtensionKit/Classes/**/*",
+  "resource_bundles": {
+    "AFSwiftExtensionKit": [
+      "AFSwiftExtensionKit/Assets/AFSwiftExtensionKitLocalizable.strings"
+    ]
+  }
 }

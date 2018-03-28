@@ -1,5 +1,5 @@
 PODS:
-  - AFSwiftExtensionKit (0.1.2)
+  - AFSwiftExtensionKit (0.1.3)
 
 DEPENDENCIES:
   - AFSwiftExtensionKit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  AFSwiftExtensionKit: d1eae112511338be0c61da7873cc5febdcc4199f
+  AFSwiftExtensionKit: 93b323106cb80ab73dec97c70bef20a7221e88d5
 
 PODFILE CHECKSUM: 1ad4089178ccf94029d3861ee4e1fd60ccd99188
 

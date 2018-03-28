@@ -46,7 +46,7 @@ extension ViewController{
         view.addSubview(imageView)
     }
     // MARK: - 时间格式化
-    func dateFormatExample(timeInterval: CGFloat) {
+    func dateFormatExample(timeInterval: TimeInterval) {
         //            时间戳转字符串
         let dateString = Date.stringWithFormatterStyle(formatterStyle: "yyyy-MM-dd HH:mm:ss", timeInterval: timeInterval)
         print(dateString)
@@ -54,6 +54,7 @@ extension ViewController{
         //            根据时间戳计算时间间隔
         let sepTime = Date.intervalTimeFromCurrentDate(timeInterval: timeInterval)
         print(sepTime)
+        
     }
 }
 
