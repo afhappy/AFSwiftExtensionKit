@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = tabbar
         // MARK: - 设置主题
         //        AppDelegate.appearance(application: application)
-        let navStyle = AFNavStyle(foregroundColor: UIColor(r: 36, g: 36, b: 36), font: UIFont.systemFont(ofSize: 17), tintColor: .black)
+        let navStyle = AFNavStyle(foregroundColor: UIColor(r: 36, g: 36, b: 36), font: UIFont.systemFont(ofSize: 18), tintColor: .black)
         let tabbarStyle = AFTabbarStyle(normalFont: UIFont.systemFont(ofSize: 12), normalForegroundColor: UIColor(r: 14, g: 14, b: 14), selectFont: UIFont.systemFont(ofSize: 12), selectForegroundColor: UIColor(r: 85, g: 125, b: 252))
         
         AFAppDelegate.singleton.appearance(navStyle: navStyle, tabbarStyle: tabbarStyle)
