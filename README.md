@@ -1,6 +1,6 @@
 # AFSwiftExtensionKit
 
-[![CI Status](http://img.shields.io/travis/anandevelope/AFSwiftExtensionKit.svg?style=flat)](https://travis-ci.org/anandevelope/AFSwiftExtensionKit)
+[![CI Status](http://img.shields.io/travis/afhappy/AFSwiftExtensionKit.svg?style=flat)](https://travis-ci.org/afhappy/AFSwiftExtensionKit)
 [![Version](https://img.shields.io/cocoapods/v/AFSwiftExtensionKit.svg?style=flat)](http://cocoapods.org/pods/AFSwiftExtensionKit)
 [![License](https://img.shields.io/cocoapods/l/AFSwiftExtensionKit.svg?style=flat)](http://cocoapods.org/pods/AFSwiftExtensionKit)
 [![Platform](https://img.shields.io/cocoapods/p/AFSwiftExtensionKit.svg?style=flat)](http://cocoapods.org/pods/AFSwiftExtensionKit)
@@ -22,7 +22,7 @@ pod 'AFSwiftExtensionKit'
 
 ## Author
 
-anandevelope, xiao0423fei@163.com
+afhappy, xiao0423fei@163.com
 
 ## License
 

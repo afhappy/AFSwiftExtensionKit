@@ -1,0 +1,6 @@
+framework module AFSwiftExtensionKit {
+  umbrella header "AFSwiftExtensionKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
