@@ -38,7 +38,8 @@ TODO: Add long description of the pod here.
   s.source_files = 'AFSwiftExtensionKit/Classes/**/*'
   
   s.resource_bundles = {
-     'AFSwiftExtensionKit' => ['AFSwiftExtensionKit/Assets/*']
+  #   'AFSwiftExtensionKit' => ['AFSwiftExtensionKit/Assets/*.png']
+      'AFSwiftExtensionKit' => ['AFSwiftExtensionKit/Assets/AFSwiftExtensionKitLocalizable.strings']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
